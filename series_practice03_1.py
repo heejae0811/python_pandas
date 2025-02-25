@@ -20,8 +20,9 @@ s = s.drop(['구구콘', '하겐다즈'])
 print(s)
 
 # 값 추가
-s.at["new1"] = 100
-s.loc["new2"] = 200
-s = concat([s, Series([300], index=["new3"])])
+s['new1'] = 1
+s.at["new2"] = 2
+s.loc["new3"] = 3
+s = concat([s, Series([4], index=["new4"])])
 
 print(s)
